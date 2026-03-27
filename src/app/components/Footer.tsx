@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Phone } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -56,7 +56,7 @@ export function Footer() {
             <h4 className="font-bold mb-4">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/RamadanHamdan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/60 hover:text-primary transition-colors"
@@ -64,7 +64,7 @@ export function Footer() {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/ramadhan-hamdan-59180424b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/60 hover:text-primary transition-colors"
@@ -72,10 +72,16 @@ export function Footer() {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:ramadanhamdan98@gmail.com"
                 className="text-foreground/60 hover:text-primary transition-colors"
               >
                 <Mail size={24} />
+              </a>
+              <a
+                href="https://wa.me/085158278924"
+                className="text-foreground/60 hover:text-primary transition-colors"
+              >
+                <Phone size={24} />
               </a>
             </div>
           </div>
@@ -83,7 +89,7 @@ export function Footer() {
 
         <div className="border-t border-primary/20 pt-8 text-center text-muted-foreground">
           <p className="flex items-center justify-center gap-2">
-            Made with <Heart size={16} className="text-red-500 fill-current" /> by John Developer
+            Made by RamadhanHamdan
           </p>
           <p className="mt-2 text-sm">
             © {new Date().getFullYear()} All rights reserved.

@@ -15,11 +15,21 @@ export function Header() {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
-    }
+    // Close the mobile menu first, then scroll after the exit animation completes.
+    // If we scroll while the menu is still animating (height collapsing), the
+    // getBoundingClientRect() position shifts as the menu collapses, causing
+    // the page to scroll to the wrong position on mobile.
+    setIsMobileMenuOpen(false);
+
+    // Wait for AnimatePresence exit animation (~300ms) before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        const headerOffset = 80;
+        const offsetPosition = element.getBoundingClientRect().top + window.scrollY - headerOffset;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }
+    }, 300);
   };
 
   const navItems = [

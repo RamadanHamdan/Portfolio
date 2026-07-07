@@ -29,7 +29,7 @@ export function About() {
   ]
 
   return (
-    <section id='about' className='py-20 md:py-32 relative'>
+    <section id='about' className='py-20 md:py-32 relative overflow-hidden'>
       <div className='absolute inset-0 bg-gradient-to-b from-black via-primary/5 to-black' />
 
       <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -57,7 +57,7 @@ export function About() {
               <img
                 src='/ram.png'
                 alt='Developer'
-                className='relative rounded-2xl w-full h-[400px] object-cover'
+                className='relative rounded-2xl w-full h-[250px] sm:h-[350px] md:h-[400px] object-cover'
               />
             </div>
           </motion.div>

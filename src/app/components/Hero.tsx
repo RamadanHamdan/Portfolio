@@ -16,9 +16,9 @@ export function Hero() {
     >
       {/* Animated background gradient */}
       <div className='absolute inset-0 bg-gradient-to-br from-primary/20 via-black to-blue-900/20' />
-      <div className='absolute inset-0'>
-        <div className='absolute top-1/4 left-1/4 w-96 h-96 bg-primary/30 rounded-full filter blur-3xl animate-pulse' />
-        <div className='absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse delay-1000' />
+      <div className='absolute inset-0 overflow-hidden'>
+        <div className='absolute top-1/4 left-1/4 w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-primary/30 rounded-full filter blur-3xl animate-pulse' />
+        <div className='absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse delay-1000' />
       </div>
 
       <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20'>
@@ -36,7 +36,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-primary bg-clip-text text-transparent'
+            className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-primary bg-clip-text text-transparent'
           >
             Ramadhan Hamdan
           </motion.h1>

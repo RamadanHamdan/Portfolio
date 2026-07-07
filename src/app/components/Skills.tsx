@@ -10,28 +10,28 @@ export function Skills() {
     {
       category: 'Frontend',
       skills: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Tailwind CSS', level: 92 },
-        { name: 'Next.js', level: 88 },
+        { name: 'React', level: 70 },
+        { name: 'TypeScript', level: 60 },
+        { name: 'Tailwind CSS', level: 90 },
+        { name: 'Next.js', level: 80 },
       ],
     },
     {
       category: 'Backend',
       skills: [
-        { name: 'Node.js', level: 87 },
-        { name: 'Express', level: 85 },
+        { name: 'Laravel', level: 90 },
+        { name: 'MySql', level: 85 },
         { name: 'PostgreSQL', level: 80 },
-        { name: 'MongoDB', level: 82 },
+        { name: 'MongoDB', level: 60 },
       ],
     },
     {
       category: 'Tools & Others',
       skills: [
-        { name: 'Git & GitHub', level: 93 },
-        { name: 'Docker', level: 78 },
-        { name: 'AWS', level: 75 },
-        { name: 'Figma', level: 85 },
+        { name: 'Git & GitHub', level: 80 },
+        { name: 'VsCode', level: 90 },
+        { name: 'Antigravity', level: 90 },
+        { name: 'Figma', level: 60 },
       ],
     },
   ];

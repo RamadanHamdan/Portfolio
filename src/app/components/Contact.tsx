@@ -31,19 +31,19 @@ export function Contact() {
     {
       icon: <Mail size={24} />,
       title: 'Email',
-      value: 'contact@example.com',
-      link: 'mailto:contact@example.com',
+      value: 'ramadanhamdan98@gmail.com',
+      link: 'mailto:ramadanhamdan98@gmail.com',
     },
     {
       icon: <Phone size={24} />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+62 851-5827-8924',
+      link: 'https://wa.me/+6285158278924',
     },
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Bandung, Indonesia',
       link: null,
     },
   ];
@@ -163,7 +163,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-input-background border border-primary/20 rounded-lg focus:border-primary focus:outline-none transition-colors text-foreground"
-                  placeholder="your.email@example.com"
+                  placeholder="ramadanhamdan98@gmail.com"
                 />
               </div>
 

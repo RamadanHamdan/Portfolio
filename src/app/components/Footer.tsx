@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Phone, Instagram } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -78,10 +78,26 @@ export function Footer() {
                 <Mail size={24} />
               </a>
               <a
-                href="https://wa.me/085158278924"
+                href="https://wa.me/+6285158278924"
                 className="text-foreground/60 hover:text-primary transition-colors"
               >
                 <Phone size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/ramahmdnn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-primary transition-colors"
+              >
+                <Instagram size={24} />
+              </a>
+              <a
+              href="https://www.threads.com/@ramahmdnn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-primary transition-colors"
+              >
+                <Heart size={24} />
               </a>
             </div>
           </div>

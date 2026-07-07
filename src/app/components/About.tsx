@@ -55,7 +55,7 @@ export function About() {
             <div className='relative'>
               <div className='absolute inset-0 bg-primary/20 rounded-2xl transform rotate-3' />
               <img
-                src='src/assets/ram.png'
+                src='src/public/ram.png'
                 alt='Developer'
                 className='relative rounded-2xl w-full h-[400px] object-cover'
               />
